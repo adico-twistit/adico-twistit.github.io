@@ -22,7 +22,7 @@
 <p>Notes about my experience with the Titan Graph DB 1.0.0 backend DynamoDB, Gremlin-Groovy, Loopback, NodeJs stack for building social network REST API (i guess it will be) focused mainly on titan. </p>
 
 <h3>
-<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
+<a id="downloads--references" class="anchor" href="#downloads--references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Downloads &amp; References</h3>
 
 <p>The setup is easy and consisting of a few steps:
 1. install dynamo db locally
@@ -40,7 +40,24 @@ Again, mostly what this docs say is download unpack and run the java server (nee
 
 <p><a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.TitanDB.DownloadingAndRunning.html">Yet Another how to install by AWS</a></p>
 
-<p><a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.TitanDB.Storage.DDBLocal.html">From Local to Production - Some Settings you might need to know</a></p>
+<p><a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.TitanDB.Storage.DDBLocal.html">From Local to Production - Some Settings you might need</a></p>
+
+<p><a href="http://tinkerpop.apache.org/docs/3.1.1-incubating/reference/">Titan Graph DB Referece</a></p>
+
+<h3>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
+
+<p>Installing DynamoDB Localy
+<a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html">http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html</a></p>
+
+<p>Running DynamoDB Localy
+mvn test -Pstart-dynamodb-local</p>
+
+<p>Running gremlin server
+bin/gremlin-server.sh ${PWD}/conf/gremlin-server/gremlin-server-local.yaml</p>
+
+<p>Running gremlin console
+bin/gremlin.sh</p>
 
       <footer class="site-footer">
 
